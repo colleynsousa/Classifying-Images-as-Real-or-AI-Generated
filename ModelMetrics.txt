@@ -1,0 +1,13 @@
+Model name: ResNet18 (ImageNet pertained) 
+Task: Binary classification - Real vs. Fake images 
+Hardware: Apple Metal GPU (MPS) 
+Modified layers: replaced final layer from Linear(… out_features=1000) to Linear(… out_features=2)
+
+Training parameters: 
+- Loss function -> CrossEntropyLoss
+- Optimizer -> Adam
+- Learning rate -> 0.0001
+- Epochs -> 5
+
+Input resolution: 224x224 
+Augmentations: flip, rotation, color jitter 
